@@ -20,15 +20,23 @@ You most likely won't see a UI, as the application will start generating shapes 
 To modify behavior change the variables provided in the **initShapeGenerator**-Script.<br/>
 Most relevant variables to change are
 
+* **amountOfShapesToGenerate** defines how many shapes should be generated on a single run.
+* **allowShapeRotation** to toggle rotation of parts of the final shape.
+* **allowShapeScaling** to toggle scaling of parts of the final shape.
 * **addOutline**  to toggle adding outlines. Outlines are required for shading to work.
 * **addShading** to toggle adding shading. Outlines are required for this to work.
-* **amountOfShapesToGenerate** defines how many shapes should be generated on a single run
+* **texturizeShape** to toggle texturizing.
+* **applyBlendOnTexturizing** to toggle other colors than c_white to be applied on the texturizing subimage.
+
 * **possibleBorderColors** to add/reduce the colors used to apply a border
 * **possibleInsideColors** to add/reduce the colors used to fill the inside of the shape
-* **generateShapeInis** to toggle creation of ini-files for each generated shape. This could later be used to reconstruct single shapes
-* **texturizeShape** to toggle texturizing
-* **applyBlendOnTexturizing** to toggle other colors than c_white to be applied on the texturizing subimage.
-* **possibleTextureBlendColors** to add/reduce the colors used when *applyBlendOnTexturizing* is set. The project starts with some nice pastel colors.
+* **possibleTextureBlendColors** to add/reduce the colors used when **applyBlendOnTexturizing** is set. The project starts with some nice pastel colors.
+
+* **filenamePrefix** to set the prefix of the files that are saved to your harddrive.
+* **filenameSuffix** to set a suffix of the files that are saved to your harddrive.
+
+* **generateShapeInis** to toggle creation of ini-files for each generated shape. This could later be used to reconstruct single shapes.
+
 <br/>
 
 **What is the use?**<br/>
