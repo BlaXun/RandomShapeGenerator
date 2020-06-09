@@ -44,9 +44,16 @@ var shade = make_color_rgb(0,0,0);
 var shadeColor = merge_color(insideColor,shade,choose(0.2,0.3,0.4,0.5));
 
 if (generateShapeInis == true) {
-	ini_write_real("colors","border",borderColor);
+	
 	ini_write_real("colors","inside",insideColor);
-	ini_write_real("colors","shade",shadeColor);
+	
+	if (addOutline) {
+		ini_write_real("colors","outline",borderColor);
+	}
+	
+	if (addShading) {
+		ini_write_real("colors","shade",shadeColor);
+	}	
 }
 	
 if (addOutline) {	
