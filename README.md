@@ -29,7 +29,7 @@ To modify behavior do the following
 * *possibleTextureBlendColors* to add/reduce the colors used when *applyBlendOnTexturizing* is set. The project starts with some nice pastel colors.
 <br/>
 
-**What is the use?**
+**What is the use?**<br/>
 I do not actually have a use for this right now, but I could imagine this could be a starting point for random map-generating... or you could replace the basic shapes to pre-define some sprites for randomly generated items in your game. 
 
 **How does this work?**<br/>
