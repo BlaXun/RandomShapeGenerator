@@ -26,6 +26,8 @@ shapeOriginalColor = c_white;
 
 
 //	CHANGE THESE TO MODIFY THE BEHAVIOR
+addOutline = true;	//	Toggle drawing outlines / border. This is required for shading / inner-shadow to work.
+addShading = true;	//	Toggle drawing shading / inner-shadow. This will only work when borders are drawn.
 filenamePrefix = "random";	//	Prefix for the generated files
 filenameSuffix = ""; //	Suffix for the generated files
 amountOfShapesToGenerate = 10;	//	Amount of shapes to generate on a single run

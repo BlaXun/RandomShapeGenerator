@@ -39,6 +39,8 @@ var borderColor =  possibleBorderColors[floor(random(array_length_1d(possibleBor
 var insideColor = possibleInsideColors[floor(random(array_length_1d(possibleInsideColors)))];
 
 var shade = make_color_rgb(0,0,0);
+
+//	Choose a shade intensity. You can modify this if you see a need to do so
 var shadeColor = merge_color(insideColor,shade,choose(0.2,0.3,0.4,0.5));
 
 if (generateShapeInis == true) {
@@ -47,8 +49,14 @@ if (generateShapeInis == true) {
 	ini_write_real("colors","shade",shadeColor);
 }
 	
-generateBorderOnAbstractionGrid(abstractionGrid);
-generateShadeOnAbstractionGrid(abstractionGrid);
+if (addOutline) {	
+	generateBorderOnAbstractionGrid(abstractionGrid);
+}
+
+if (addShading) {	
+	generateShadeOnAbstractionGrid(abstractionGrid);
+}
+
 drawShapeFromAbstractionGrid(abstractionGrid,borderColor,shadeColor,insideColor);
 
 if (texturizeShape == true) {	
