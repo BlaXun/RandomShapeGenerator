@@ -33,4 +33,4 @@ The shapes themself will be located in <b>%LOCALAPPDATA%/RandomShapeGenerator</b
 For all of this to work I relied heavily on pixel functions in GML. These are slow... you probably could do all this with shaders ...but my knowledge on that topic is lacking... and I was looking for a fun side-project.. so yeah.. thats my excuse. Its not horrible though. <br/>Give it a try!
 <br/><br/>
 <b>Samples</b><br/>
-![alt text](https://i.imgur.com/RREWYds.png)
+<img url="https://i.imgur.com/RREWYds.png"></img>
