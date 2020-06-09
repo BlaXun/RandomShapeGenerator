@@ -2,6 +2,9 @@
 Creates "random" shapes by combining modified subimages and saves the shapes to your HDD (as png) for usage. 
 Draws an outline, inner-shadow and texturizes the output. Customizable behavior. GameMakerStudio2 Project
 
+**Samples**
+![Sample Shapes](RandomSamples.PNG?raw=true "Random Samples")<br/><br/>
+
 **Instructions**<br/>
 Open the project in Game Maker Studio 2 (project was created with v2.2.5.481)
 <br/>
@@ -30,6 +33,3 @@ The shapes themself will be located in **%LOCALAPPDATA%/RandomShapeGenerator** -
 
 **Why is this "slow"?**<br/>
 For all of this to work I relied heavily on pixel functions in GML. These are slow... you probably could do all this with shaders ...but my knowledge on that topic is lacking... and I was looking for a fun side-project.. so yeah.. thats my excuse. Its not horrible though. <br/>Give it a try!
-
-**Samples**
-![Sample Shapes](RandomSamples.PNG?raw=true "Random Samples")
