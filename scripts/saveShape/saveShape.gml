@@ -1,4 +1,4 @@
-var filename = "random"+string(amountOfExistingFiles)+".png"
+var filename = filenamePrefix+string(amountOfExistingFiles)+filenameSuffix+".png"
 surface_save(mySurface, filename);
 amountOfExistingFiles +=1;
 

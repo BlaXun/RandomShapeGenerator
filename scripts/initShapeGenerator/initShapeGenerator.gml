@@ -26,10 +26,12 @@ shapeOriginalColor = c_white;
 
 
 //	CHANGE THESE TO MODIFY THE BEHAVIOR
-amountOfShapesToGenerate = 10;
-possibleBorderColors = [c_black,c_gray,c_dkgray];
-possibleInsideColors = [c_white,c_ltgray,make_color_rgb(200,200,200),make_color_rgb(191,255,228),make_color_rgb(255,221,191),make_color_rgb(239,255,191),make_color_rgb(222,191,255)];
-generateShapeInis = false;
+filenamePrefix = "random";	//	Prefix for the generated files
+filenameSuffix = ""; //	Suffix for the generated files
+amountOfShapesToGenerate = 10;	//	Amount of shapes to generate on a single run
+possibleBorderColors = [c_black,c_gray,c_dkgray];	//	List of colors that can be used for drawing the border/outline
+possibleInsideColors = [c_white,c_ltgray,make_color_rgb(200,200,200),make_color_rgb(191,255,228),make_color_rgb(255,221,191),make_color_rgb(239,255,191),make_color_rgb(222,191,255)];	//	List of colors to mask the inside of the shape with
+generateShapeInis = false;	//	Wether ini-files, describing the shape,  for each shape should be generated
 
 texturizeShape = true;	//	Defines wether shapes should be texturized with one of the subimages of sprTextures
 applyBlendOnTexturizing = true;	//	Wether the applied texture should use a color for blending
