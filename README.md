@@ -1,5 +1,5 @@
 # RandomShapeGenerator
-Creates "random" shapes by combining modified subimages. 
+Creates "random" shapes by combining modified subimages and saves the shapes to your HDD (as png) for usage. 
 Draws an outline, inner-shadow and texturizes the output. Customizable behavior. GameMakerStudio2 Project
 
 **Instructions**<br/>
