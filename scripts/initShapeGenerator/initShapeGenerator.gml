@@ -28,6 +28,8 @@ shapeOriginalColor = c_white;
 
 
 //	CHANGE THESE TO MODIFY THE BEHAVIOR
+allowShapeRotation = true;	//	Toggle rotating of subimages that are used to compose the final shape.
+allowShapeScaling = true	//	Toggle scaling of subimages that are used to compose the final shape.
 addOutline = true;	//	Toggle drawing outlines / border. This is required for shading / inner-shadow to work.
 addShading = true;	//	Toggle drawing shading / inner-shadow. This will only work when borders are drawn.
 filenamePrefix = "myTest";	//	Prefix for the generated files

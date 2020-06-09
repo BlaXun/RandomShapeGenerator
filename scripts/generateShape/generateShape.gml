@@ -17,15 +17,15 @@ if (generateShapeInis == true) {
 for (var i=0;i<(2+ceil(random(6)));i++) {
 	
 	var subimageIndex = floor(random(sprite_get_number(self.sprite_index)));
-	var imageRotation = round(random(360));
-	var xScale = min(0.2+random(1),1);
-	var yScale = min(0.2+random(1),1);
+	var imageRotation = allowShapeRotation ? round(random(360)) : 0;
+	var xScale = allowShapeScaling ? min(0.2+random(1),1) : 1;
+	var yScale = allowShapeScaling ? min(0.2+random(1),1) : 1;
 	
 	if (generateShapeInis == true) {
 		ini_write_real("shapes",string(i)+"_subimage",subimageIndex);
-		ini_write_real("shapes",string(i)+"_rotation",imageRotation);
+		ini_write_real("shapes",string(i)+"_rotation",imageRotation);		
 		ini_write_real("shapes",string(i)+"_xscale",xScale);
-		ini_write_real("shapes",string(i)+"_yscale",yScale);
+		ini_write_real("shapes",string(i)+"_yscale",yScale);		
 	}
 	
 	draw_sprite_ext(self.sprite_index,subimageIndex,spriteCenterX,spriteCenterY,xScale,yScale,imageRotation,c_white,1);
