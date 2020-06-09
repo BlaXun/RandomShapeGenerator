@@ -1,6 +1,9 @@
 # Random Shape Generator
-Creates "random" shapes by combining modified subimages and saves the shapes to your HDD (as png) for usage. 
-Behavior is customizable. Game Maker Studio 2 Project
+Creates "random" shapes by combining modified subimages. Applies effects such as **shading**, **outlines**, **fill-color**, **texturizing** and saves the results to harddrive for further usage.<br/>
+**Behavior is customizable**<br/>
+<br/>
+Game Maker Studio 2 Project
+
 
 **Samples**
 ![Sample Shapes](RandomSamples.PNG?raw=true "Random Samples")<br/><br/>
