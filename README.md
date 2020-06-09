@@ -3,7 +3,7 @@ Creates "random" shapes by combining modified subimages and saves the shapes to 
 Draws an outline, inner-shadow and texturizes the output. Customizable behavior. GameMakerStudio2 Project
 
 **Samples**
-![Sample Shapes](RandomSamples.png?raw=true "Random Samples")<br/><br/>
+![Sample Shapes](RandomSamples.PNG?raw=true "Random Samples")<br/><br/>
 
 **Instructions**<br/>
 Open the project in Game Maker Studio 2 (project was created with v2.2.5.481)
