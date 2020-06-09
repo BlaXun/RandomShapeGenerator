@@ -28,7 +28,7 @@ for (var i=0;i<(2+ceil(random(6)));i++) {
 		ini_write_real("shapes",string(i)+"_yscale",yScale);
 	}
 	
-	draw_sprite_ext(self.sprite_index,subimageIndex,(size/2),(size/2),xScale,yScale,imageRotation,c_white,1);
+	draw_sprite_ext(self.sprite_index,subimageIndex,spriteCenterX,spriteCenterY,xScale,yScale,imageRotation,c_white,1);
 }
 
 populatePixelGridFromSurface(pixelGrid,mySurface);
@@ -84,7 +84,7 @@ if (texturizeShape == true) {
 		ini_write_real("texturize","blendcolor",blendColor);
 	}
 	
-	draw_sprite_ext(sprTextures,textureSubimage,size/2,size/2,1,1,textureRotation,blendColor,1);
+	draw_sprite_ext(sprTextures,textureSubimage,spriteCenterX,spriteCenterY,1,1,textureRotation,blendColor,1);
 	gpu_set_blendmode(bm_normal);
 }
 

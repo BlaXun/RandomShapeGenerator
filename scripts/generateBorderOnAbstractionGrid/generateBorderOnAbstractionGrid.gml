@@ -15,9 +15,9 @@ for (var yPos=0;yPos<_gridHeight;yPos++) {
 		} else if (positionContent == PixelAbstraction.Inside) {
 		
 		leftContent = (xPos-1>=0) ? ds_grid_get(_abstractionGrid,xPos-1,yPos) : noone;
-		rightContent = (xPos+1<size) ? ds_grid_get(_abstractionGrid,xPos+1,yPos) : noone;
+		rightContent = (xPos+1<sizeWidth) ? ds_grid_get(_abstractionGrid,xPos+1,yPos) : noone;
 		topContent = (yPos-1>=0) ? ds_grid_get(_abstractionGrid,xPos,yPos-1) : noone;
-		bottomContent = (yPos+1<size) ? ds_grid_get(_abstractionGrid,xPos,yPos+1) : noone;
+		bottomContent = (yPos+1<sizeHeight) ? ds_grid_get(_abstractionGrid,xPos,yPos+1) : noone;
 
 			//	check left
 			if (leftContent != noone && leftContent == PixelAbstraction.Empty) {			

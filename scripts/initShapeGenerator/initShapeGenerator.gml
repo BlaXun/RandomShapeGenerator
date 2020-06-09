@@ -13,12 +13,14 @@ if (file_find_first("*.png",0) != "") {
 
 _isDone = false;
 
-size = sprite_get_width(self.sprite_index);	//	The surfaces size is based on the size of the sprite that holds the shapes
-mySurface = surface_create(size,size);
+sizeWidth = sprite_get_width(self.sprite_index);	//	The height to use for the surface and grid. Based on the sprite thats used as base for generating shapes
+sizeHeight = sprite_get_height(self.sprite_index);
+
+mySurface = surface_create(sizeWidth,sizeHeight);
 
 //	Grid to store the border-coordinates
-pixelGrid = ds_grid_create(size,size);
-abstractionGrid = ds_grid_create(size,size);
+pixelGrid = ds_grid_create(sizeWidth,sizeHeight);
+abstractionGrid = ds_grid_create(sizeWidth,sizeHeight);
 
 //	The fill color of the subimages that are used to build the final shape
 //	If this is not set to the correct color... nothing will happen
@@ -28,9 +30,9 @@ shapeOriginalColor = c_white;
 //	CHANGE THESE TO MODIFY THE BEHAVIOR
 addOutline = true;	//	Toggle drawing outlines / border. This is required for shading / inner-shadow to work.
 addShading = true;	//	Toggle drawing shading / inner-shadow. This will only work when borders are drawn.
-filenamePrefix = "random";	//	Prefix for the generated files
-filenameSuffix = ""; //	Suffix for the generated files
-amountOfShapesToGenerate = 10;	//	Amount of shapes to generate on a single run
+filenamePrefix = "myTest";	//	Prefix for the generated files
+filenameSuffix = "_isNice"; //	Suffix for the generated files
+amountOfShapesToGenerate = 1000;	//	Amount of shapes to generate on a single run
 possibleBorderColors = [c_black,c_gray,c_dkgray];	//	List of colors that can be used for drawing the border/outline
 possibleInsideColors = [c_white,c_ltgray,make_color_rgb(200,200,200),make_color_rgb(191,255,228),make_color_rgb(255,221,191),make_color_rgb(239,255,191),make_color_rgb(222,191,255)];	//	List of colors to mask the inside of the shape with
 generateShapeInis = false;	//	Wether ini-files, describing the shape,  for each shape should be generated
