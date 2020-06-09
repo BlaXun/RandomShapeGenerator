@@ -29,8 +29,8 @@ To modify behavior do the following
 As soon as shape generating is done you will get a popup telling you how long it took to create those shapes.
 The shapes themself will be located in <b>%LOCALAPPDATA%/RandomShapeGenerator</b> - unless your renamed the project.
 <br/>
-<b>Why is this "slow"?</b><br/>
+<b>Why is this "slow"?</b><br/><br/>
 For all of this to work I relied heavily on pixel functions in GML. These are slow... you probably could do all this with shaders ...but my knowledge on that topic is lacking... and I was looking for a fun side-project.. so yeah.. thats my excuse. Its not horrible though. <br/>Give it a try!
-<br/>
+<br/><br/>
 <b>Samples</b><br/>
 ![alt text](https://i.imgur.com/RREWYds.png)
